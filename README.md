@@ -6,7 +6,7 @@ Kamera görüntüsü bilgisayarda işlenir ve dosyaya kaydedilmez.
 
 ## Gereksinimler
 
-- Windows
+- Windows (bilgisayarın yerel masaüstü oturumu)
 - Python 3.13 (64 bit)
 - Windows'un erişebildiği bir kamera
 
@@ -31,8 +31,8 @@ Kamera karşısına oturup `Kisi algilandi` yazısını bekle. Kadrajdan çık.
 kilitlenir. Programdan çıkmak için görüntü penceresinde `Q` tuşuna bas.
 
 Yanlış kamera açılırsa `kamera_test.py` ile kamera numaralarını dene.
-Çalışan numarayı `kamera_kilit.py` içindeki `cv2.VideoCapture(0)` satırında
-kullan. Kadrajda başka biri kalırsa sayaç başlamaz.
+Çalışan numarayı `kamera_kilit.py` dosyasının başındaki `KAMERA_NO`
+değerine yaz. Kadrajda başka biri kalırsa sayaç başlamaz.
 
 ## Oturum açıldığında çalıştırma
 
@@ -41,3 +41,14 @@ oluştur ve görevi yalnızca kullanıcı oturum açtığında çalışacak şek
 ayarla. Program olarak proje klasöründeki `.venv\Scripts\pythonw.exe`
 dosyasını seç. Bağımsız değişkenler alanına `kamera_kilit.py` dosyasının
 tam yolunu çift tırnak içinde yaz ve sonuna `--arka-plan` ekle.
+
+## Birden fazla Windows hesabı
+
+Aynı bilgisayarda birden fazla hesap kullanıyorsan her hesapta projeyi
+kur ve o hesap için ayrı bir oturum açma görevi oluştur. Var olan bir
+kurulumu güncellerken görevi durdur, `kamera_kilit.py` dosyasını değiştir
+ve görevi yeniden çalıştır.
+
+**Kullanıcı değiştir** ile geçiş yaptığında önceki oturum kamerayı bırakır.
+Etkin masaüstündeki görev kamerayı açar ve kilit sayacını başlatmadan önce
+yeniden bir kişinin algılanmasını bekler. Ekran kilitliyken kamera bırakılır.
