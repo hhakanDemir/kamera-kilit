@@ -1,7 +1,7 @@
 # Kamera Kilit
 
 USB kameranın görüş alanında bir kişi algılandıktan sonra kadraj
-kesintisiz 5 saniye boş kalırsa Windows oturumunu kilitler.
+kesintisiz 3 saniye boş kalırsa Windows oturumunu kilitler.
 Kamera görüntüsü bilgisayarda işlenir ve dosyaya kaydedilmez.
 
 ## Gereksinimler
