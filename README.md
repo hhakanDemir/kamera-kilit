@@ -27,7 +27,7 @@ Invoke-WebRequest -Uri "https://storage.googleapis.com/mediapipe-models/pose_lan
 ```
 
 Kamera karşısına oturup `Kisi algilandi` yazısını bekle. Kadrajdan çık.
-5 saniye içinde dönersen sayaç sıfırlanır. Kadraj boş kalırsa Windows
+3 saniye içinde dönersen sayaç sıfırlanır. Kadraj boş kalırsa Windows
 kilitlenir. Programdan çıkmak için görüntü penceresinde `Q` tuşuna bas.
 
 Yanlış kamera açılırsa `kamera_test.py` ile kamera numaralarını dene.
