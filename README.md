@@ -7,7 +7,7 @@ Kamera görüntüsü bilgisayarda işlenir ve dosyaya kaydedilmez.
 ## Gereksinimler
 
 - Windows (bilgisayarın yerel masaüstü oturumu)
-- Python 3.13 (64 bit)
+- Python 3 (64 bit, 3.15.2 ile test edildi)
 - Windows'un erişebildiği bir kamera
 
 ## Kurulum
@@ -15,7 +15,8 @@ Kamera görüntüsü bilgisayarda işlenir ve dosyaya kaydedilmez.
 Projeyi indirip klasöründe PowerShell aç. Ardından çalıştır:
 
 ```powershell
-py -3.13 -m venv .venv
+python --version
+python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 Invoke-WebRequest -Uri "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task" -OutFile ".\pose_landmarker_lite.task"
 ```
