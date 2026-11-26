@@ -10,7 +10,7 @@ import mediapipe as mp
 
 
 KAMERA_NO = 0
-KILIT_SURESI = 5
+KILIT_SURESI = 3
 PENCERE = "Kamera kilidi testi - cikis icin Q"
 DESKTOP_READOBJECTS = 0x0001
 UOI_NAME = 2
